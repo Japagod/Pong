@@ -1,4 +1,4 @@
-var py1 = 0
+var py1 =  0
 var py2 = 0
 document.addEventListener("keydown",move)
 
