@@ -1,6 +1,14 @@
+var keysPressed = {}
 var py1 =  0
 var py2 = 0
-document.addEventListener("keydown",move)
+document.addEventListener("keydown",(move) => {
+    keysPressed[event.key] = true
+}
+
+document.addEventListener('keyup', (event) => {
+    delete this.keysPressed[event.key]
+    }
+    )
 
 function move(event){
     var bar1 = document.getElementById("barra1")
