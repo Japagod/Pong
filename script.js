@@ -7,7 +7,7 @@ function move(event){
     var tecla = event.keyCode
         if(tecla==38){
             if(py>0){
-            py-=10
+            py-=7
             bar1.style.top=py+"px"
         }
         } if(tecla==40){
@@ -16,12 +16,12 @@ function move(event){
             bar1.style.top=py+"px"
             }   
         }
-        if(tecla==38){
+        if(tecla==87){
             if(py>0){
-            py-=10
+            py-=7
             bar2.style.top=py+"px"
         }
-        } if(tecla==40){
+        } if(tecla==83){
             if(py<611){
             py+=7
             bar2.style.top=py+"px"
