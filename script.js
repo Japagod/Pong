@@ -7,8 +7,18 @@ document.addEventListener("keydown",(move) => {
 
 document.addEventListener('keyup', (event) => {
     delete this.keysPressed[event.key]
+})
+document.addEventListener('keydown', (event) => {
+    keysPressed[event.key] = true;
+ 
+    if (keysPressed['Control'] && event.key == 'a') {
+        alert(event.key);
     }
-    )
+ });
+ 
+ document.addEventListener('keyup', (event) => {
+    delete keysPressed[event.key];
+ });
 
 function move(event){
     var bar1 = document.getElementById("barra1")
