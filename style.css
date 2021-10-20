@@ -3,8 +3,16 @@ body{
     height: 100vh;
     background: rgb(8, 8, 8);
 }
-#barra{
+#barra1{
     left: 20px;
+    position:fixed;
+    height: 20%;
+    width: 20px;
+    border-radius: 5px;
+    background: green;
+}
+#barra2{
+    right: 20px;
     position:fixed;
     height: 20%;
     width: 20px;
