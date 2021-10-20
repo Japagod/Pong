@@ -2,16 +2,16 @@ var keysPressed = {}
 var py1 =  0
 var py2 = 0
 
-document.addEventListener('keydown', (event) => {
-    keysPressed[event.key] = true;
+document.addEventListener('keydown', (move) => {
+    keysPressed[move.key] = true;
  
-    if (keysPressed['Control'] && event.key == 'ArrowDown') {
-        alert(event.key);
+    if (keysPressed['Control'] && move.key == 'ArrowDown') {
+        alert(move.key);
     }
  });
  
- document.addEventListener('keyup', (event) => {
-    delete keysPressed[event.key];
+ document.addEventListener('keyup', (move) => {
+    delete keysPressed[move.key];
  });
 
 function move(event){
