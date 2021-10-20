@@ -3,7 +3,7 @@ var py1 =  0
 var py2 = 0
 document.addEventListener("keydown",(move) => {
     keysPressed[event.key] = true
-}
+})
 
 document.addEventListener('keyup', (event) => {
     delete this.keysPressed[event.key]
